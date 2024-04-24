@@ -83,14 +83,12 @@ pase = prompt("Ingresa tu pase (VIP o NORMAL):")
 entrada = confirm("¿Tienes entrada?")
 if(nombre=="Aaron" || pase=="VIP"){
     console.log("Bienvenido al club MINDHUB")
-}
-if(entrada==true){
+}else if(entrada==true){
     entrada1 = confirm("¿Deseas usar la entrada?")
     if(entrada1==true){
         console.log("Bienvenido al club MINDHUB")
     }else console.log("Te esperamos en otra oportunidad")
-}
-if(nombre!="Aaron" && pase!="VIP" && entrada!=true){
+}else if(nombre!="Aaron" && pase!="VIP" && entrada!=true){
     compra = confirm("¿Deseas comprar la entrada?")
     if(compra==true){
         dinero = parseInt(prompt("Ingresa tu dinero disponible:"))
@@ -99,7 +97,7 @@ if(nombre!="Aaron" && pase!="VIP" && entrada!=true){
             if(confirmarCompra==true){
                 console.log("Bienvenido al club MINDHUB")
             }else console.log("No se completo la compra. Te esperamos en otra oportunidad")
-        }
+        }else console.log("Gracias por visitarnos, te esperamos en otra oportunidad")
     }else console.log("Gracias por visitarnos, te esperamos en otra oportunidad")
 }
 
@@ -191,7 +189,7 @@ if(edad>12 && edad<18){
 if(edad>18 && edad<45){
     console.log("Eres un mayor joven")
 }
-if(edad>45){
+if(edad>45 && edad<100){
     console.log("Eres un anciano")
 }
 if(edad>100){
@@ -199,8 +197,8 @@ if(edad>100){
 }
 
 //Punto 10
-jugador1 = prompt("Ingrese PIEDRA PAPEL o TIJERAS")
-jugador2 = prompt("Ingrese PIEDRA PAPEL o TIJERAS")
+jugador1 = prompt("Jugador 1: Ingrese PIEDRA PAPEL o TIJERAS")
+jugador2 = prompt("Jugador 2: Ingrese PIEDRA PAPEL o TIJERAS")
 if(jugador1=="PIEDRA" && jugador2=="TIJERAS" || jugador1=="PAPEL" && jugador2=="PIEDRA" || jugador1=="TIJERAS" && jugador2=="PAPEL"){
     console.log("El jugador 1 ha ganado")
 }
