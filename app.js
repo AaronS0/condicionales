@@ -106,73 +106,67 @@ let numeroIncognita = 7
 let numeroIngresado
 numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
 
-if(numeroIngresado==numeroIncognita){
+if (numeroIngresado == numeroIncognita) {
     console.log("¡Ganaste, haz adivinado el número!")
 }
-if(numeroIngresado>numeroIncognita){
+if (numeroIngresado > numeroIncognita) {
     console.log("El numero ingresado es mayor, vuelve a intentarlo")
     numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-    if(numeroIngresado<numeroIncognita){
+    if (numeroIngresado == numeroIncognita) {
+        console.log("¡Ganaste, haz adivinado el número!")
+    } else if (numeroIngresado < numeroIncognita) {
         console.log("El numero ingresado es menor, vuelve a intentarlo")
         numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-        if(numeroIngresado<numeroIncognita){
-            console.log("El numero ingresado es menor, has perdido")
-        }
-        if(numeroIngresado>numeroIncognita){
+        if (numeroIngresado > numeroIncognita) {
             console.log("El numero ingresado es mayor, has perdido")
         }
-        if(numeroIngresado==numeroIncognita){
+        if (numeroIngresado < numeroIncognita) {
+            console.log("El numero ingresado es menor, has perdido")
+        }
+        if (numeroIngresado == numeroIncognita) {
             console.log("¡Ganaste, haz adivinado el número!")
         }
-    }
-}
-if(numeroIngresado<numeroIncognita){
-    console.log("El numero ingresado es menor, vuelve a intentarlo")
-    numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-    if(numeroIngresado>numeroIncognita){
+    } else if (numeroIngresado > numeroIncognita) {
         console.log("El numero ingresado es mayor, vuelve a intentarlo")
         numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-        if(numeroIngresado<numeroIncognita){
-            console.log("El numero ingresado es menor, has perdido")
-        }
-        if(numeroIngresado>numeroIncognita){
+        if (numeroIngresado > numeroIncognita) {
             console.log("El numero ingresado es mayor, has perdido")
         }
-        if(numeroIngresado==numeroIncognita){
+        if (numeroIngresado < numeroIncognita) {
+            console.log("El numero ingresado es menor, has perdido")
+        }
+        if (numeroIngresado == numeroIncognita) {
             console.log("¡Ganaste, haz adivinado el número!")
         }
     }
 }
-if(numeroIngresado>numeroIncognita){
-    console.log("El numero ingresado es mayor, vuelve a intentarlo")
-    numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-    if(numeroIngresado>numeroIncognita){
-        console.log("El numero ingresado es mayor, vuelve a intentarlo")
-        numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-        if(numeroIngresado<numeroIncognita){
-            console.log("El numero ingresado es menor, has perdido")
-        }
-        if(numeroIngresado>numeroIncognita){
-            console.log("El numero ingresado es mayor, has perdido")
-        }
-        if(numeroIngresado==numeroIncognita){
-            console.log("¡Ganaste, haz adivinado el número!")
-        }
-    }
-}
-if(numeroIngresado<numeroIncognita){
+if (numeroIngresado < numeroIncognita) {
     console.log("El numero ingresado es menor, vuelve a intentarlo")
     numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-    if(numeroIngresado<numeroIncognita){
+    if (numeroIngresado == numeroIncognita) {
+        console.log("¡Ganaste, haz adivinado el número!")
+    } else if (numeroIngresado > numeroIncognita) {
+        console.log("El numero ingresado es mayor, vuelve a intentarlo")
+        numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
+        if (numeroIngresado < numeroIncognita) {
+            console.log("El numero ingresado es menor, has perdido")
+        }
+        if (numeroIngresado > numeroIncognita) {
+            console.log("El numero ingresado es mayor, has perdido")
+        }
+        if (numeroIngresado == numeroIncognita) {
+            console.log("¡Ganaste, haz adivinado el número!")
+        }
+    } else if (numeroIngresado < numeroIncognita) {
         console.log("El numero ingresado es menor, vuelve a intentarlo")
         numeroIngresado = parseInt(prompt("Ingresa el numero a adivinar:"))
-        if(numeroIngresado<numeroIncognita){
+        if (numeroIngresado < numeroIncognita) {
             console.log("El numero ingresado es menor, has perdido")
         }
-        if(numeroIngresado>numeroIncognita){
+        if (numeroIngresado > numeroIncognita) {
             console.log("El numero ingresado es mayor, has perdido")
         }
-        if(numeroIngresado==numeroIncognita){
+        if (numeroIngresado == numeroIncognita) {
             console.log("¡Ganaste, haz adivinado el número!")
         }
     }
